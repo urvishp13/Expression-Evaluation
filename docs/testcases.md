@@ -20,6 +20,9 @@ was tested using the printScalars() and printArrays() methods provided by the co
 | 7  |a_+b           |vara[i]_+varb[p]      |
 | 8  |a+_b           |vara[i]+_varb[p]      |
 | 9  |               |var[_ i_]              |
-| 10 |               |var[__i__]            |
+| 10 |               |var[__ i__]            |
 | 11 |               |var[i_]               |
 | 12 |               |var[_i]               |
+
+Note: In #9 and #10, the `i`'s have a non-"_"/non-"__" space in front of them to circumvent being styled; the spaces used in the test cases
+are still one/two, respectively.
