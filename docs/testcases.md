@@ -8,7 +8,8 @@ There is no return value for this expression. Instead, it is used to extract the
 was tested using the printScalars() and printArrays() methods provided by the coursework.
 
 |    | Expression    | Expression           |
-|    | Variables Only| Variables and Arrays |
+|:--:|:-------------:|:--------------------:|
+|:--:| Variables Only| Variables and Arrays |
 |:--:|:-------------:|:--------------------:|
 | 1  |a              |var[i]                |
 | 2  |a+b            |vara[i]+varb[p]       |  
