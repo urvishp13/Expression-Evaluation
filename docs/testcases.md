@@ -24,5 +24,5 @@ was tested using the printScalars() and printArrays() methods provided by the co
 | 11 |               |`var[i_]`               |
 | 12 |               |`var[_i]`               |
 
-Note: In #9 and #10, the `i`'s have a non-"_"/non-"__" space in front of them to circumvent being styled; the spaces used in the test cases
+Note: In #9 and #10, the `i`'s have a non-"_"/non-"__" space in front of them to circumvent them being styled; the spaces used in the test cases
 are still one/two, respectively.
