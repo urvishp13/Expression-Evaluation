@@ -2,7 +2,7 @@
 
 ### Testing buildSymbols()
 
-Note: The "_" in the test cases are spaces: "_" is one space and "__" is two spaces. Spaces were put in the test cases to see if 
+Note: The underscores in the test cases are spaces: "_" is one space and "__" is two spaces. Spaces were put in the test cases to see if 
 non-letter/non-numeric characters are properly skipped when parsing the expression.
 
 There is no return value for this expression. Instead, it is used to extract the variables/arrays from the expresssion. Its correctness
