@@ -33,27 +33,27 @@ The database (.txt file used) with the variables/arrays values is `etest3.txt`.
 
 ##### Guide
 
-`#6 through #11`  ==> all combinations of operations work on <span style="text-decoration: underline double">integer/scalar</span> terms
-`#21`             ==> subexpression with 1 integer/scalar
-`#20`             ==> subexpression with expression
+`#6 through #11`  ==> all combinations of operations work on integer/scalar terms</br>
+`#21`             ==> subexpression with 1 integer/scalar</br>
+`#20`             ==> subexpression with expression</br>
 `#12 through #22` ==> identify subexpressions in the front, middle, and end of expression with all operators
 
-`#23`             ==> identify an array
-`#24`             ==> identify an array with a longer name
-`#23 through #31` ==> identify arrays in the front, middle, and end of expression with all operators
+`#23`             ==> identify an array</br>
+`#24`             ==> identify an array with a longer name</br>
+`#23 through #31` ==> identify arrays in the front, middle, and end of expression with all operators</br>
 
 
-`#32 through #35` ==> identify expressions with arrays/subexpressions nested inside array/subexpression
-`#33 and #35`     ==> can extract content in between opening and closing square brackets
+`#32 through #35` ==> identify expressions with arrays/subexpressions nested inside array/subexpression</br>
+`#33 and #35`     ==> can extract content in between opening and closing square brackets</br>
 
-`#36 through #38` ==> everything together
+`#36 through #38` ==> everything together</br>
 
-`#42 through #47` ==> edge cases
-`#42`             ==> array subscript < 0
-`#43`             ==> divide by 0
-`#44`             ==> divide 0 by any number
-`#45`             ==> try expression with multidigit integers
-`#46`             ==> try expression with spaces & tabs
+`#42 through #47` ==> edge cases</br>
+`#42`             ==> array subscript < 0</br>
+`#43`             ==> divide by 0</br>
+`#44`             ==> divide 0 by any number</br>
+`#45`             ==> try expression with multidigit integers</br>
+`#46`             ==> try expression with spaces & tabs</br>
 `#47`             ==> try expression with scalar of negative value
 
 |    | Expression    | Value |
