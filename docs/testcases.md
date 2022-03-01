@@ -1,6 +1,6 @@
 # Test Cases
 
-## buildSymbols()
+### buildSymbols()
 
 Note: The underscores in the test cases are spaces: "_" is one space and "__" is two spaces. Spaces were put in the test cases to see if 
 non-letter/non-numeric characters are properly skipped when parsing the expression.
@@ -27,7 +27,7 @@ was tested using the printScalars() and printArrays() methods provided by the co
 Note: In #9 and #10, the `i`'s have a non-"_"/non-"__" space in front of them to circumvent them being styled; the spaces used in the test cases
 are still one/two, respectively.
 
-## evaluate()
+### evaluate()
 
 The database (.txt file used) with the variables/arrays values is `etest3.txt`.
 
