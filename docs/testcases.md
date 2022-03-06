@@ -90,13 +90,13 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 |37|`(b/c-arraya[1])*A[5]`|`-8`|
 |38|`A[a+(b*c)/d-i]`|`3`|
 |39|`A[a+b]+B[c+d]`|`18`|
-|40|`A[-1]`|`NaN`|
-|41|`A[10]`|`NaN`|
+|40|`A[-1]`|`error!`|
+|41|`A[10]`|`error!`|
 |42|`a/0`|`Infinity`|
 |43|`0/1`|`0`|
 |44|`a+123+567`|`691`|
 |45|`a+\tb+_c`|`6`|
-|46|`A[j]`|`NaN`|
+|46|`A[j]`|`error!`|
 |47|`j-4`|`-5`|
 |48|`a-a-a`|`-1`|
 
@@ -126,5 +126,3 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 `#45`             &rarr; try expression with spaces & tabs (the "\t" is replaced by an actual tab in the expression)</br>
 `#46 and 47`      &rarr; try expression with scalar of negative value</br>
 `#48`		      &rarr; try expression with multiple of the same variable
-
-The `NaN`'s are used to circumvent an error message and make the usage of the app more fluid.
