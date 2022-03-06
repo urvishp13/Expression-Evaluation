@@ -403,9 +403,9 @@ public class Expression {
     			catch (NullPointerException e) { // in case when no values file is entered
     				termValue = 0;
     			}
-    			catch (ArrayIndexOutOfBoundsException e) { // in case when arrayIndex < 0 or > array length
-    				termValue = Float.NaN;
-    			}
+//    			catch (ArrayIndexOutOfBoundsException e) { // in case when arrayIndex < 0 or > array length
+//    				termValue = Float.NaN;
+//    			}
     		}
     		// Else, (the term is an integer/scalar) (BASE CASE)
     		else {
@@ -532,9 +532,9 @@ public class Expression {
 	    			catch (NullPointerException e) { // in case when no values file is entered
 	    				nextTermValue = 0;
 	    			}
-	    			catch (ArrayIndexOutOfBoundsException e) { // in case when arrayIndex < 0
-	    				nextTermValue = Float.NaN;
-	    			}
+//	    			catch (ArrayIndexOutOfBoundsException e) { // in case when arrayIndex < 0
+//	    				nextTermValue = Float.NaN;
+//	    			}
 	    		}
 	    		// Else, (the next term is an integer/scalar)
 	    		else {
