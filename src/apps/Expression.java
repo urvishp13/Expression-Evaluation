@@ -224,8 +224,8 @@ public class Expression {
 			}
     	}
     	
-    	printScalars();
-    	printArrays();
+    	//printScalars();
+    	//printArrays();
     }
     
     /**
@@ -297,7 +297,7 @@ public class Expression {
     	// Save the original opening- and closing-BracketIndex ArrayLists
     	ArrayList<Integer> originalOpeningBracketIndex = openingBracketIndex;
     	ArrayList<Integer> originalClosingBracketIndex = closingBracketIndex;
-    	System.out.println("current expression: " + originalExpr);
+    	//System.out.println("current expression: " + originalExpr);
     	
     	// Set the index = 0
     	int currentIndex = 0;
@@ -372,7 +372,7 @@ public class Expression {
     			expr = originalExpr.substring(openingParenIndexInOriginalExpr+1, closingParenIndexInOriginalExpr);
     			// Trim expr of its whitespaces/tabs
     			expr = expr.trim();
-    			System.out.println("encountered subexpression: " + expr + ", recursing");
+    			//System.out.println("encountered subexpression: " + expr + ", recursing");
     			// Find the opening and closing brackets of the new expr using isLegallyMatched()
     			isLegallyMatched();
     			// evaluate() the subexpression, and Store in termValue
@@ -388,12 +388,12 @@ public class Expression {
 				// Extract the subscript (an expression) of the array by making the content in between the brackets 
 				// 		the new expr
     			expr = originalExpr.substring(openingSquareBracketIndexInOriginalExpr+1, closingSquareBracketIndexInOriginalExpr);
-    			System.out.println("encountered subexpression: " + expr + ", recursing");
+    			//System.out.println("encountered subexpression: " + expr + ", recursing");
     			// Find the opening and closing brackets of the new expr using isLegallyMatched()
     			isLegallyMatched();
     			// evaluate() the content, and Store the returned value in arrayIndex.
     			int arrayIndex = (int) evaluate();
-    			System.out.println("subscript value: " + arrayIndex);
+    			//System.out.println("subscript value: " + arrayIndex);
 				// Find the array name in arrays and use the arrayIndex to find the termValue in the array
     			ArraySymbol array = new ArraySymbol(arrayName);
     			int arrayi = arrays.indexOf(array);
@@ -414,7 +414,7 @@ public class Expression {
     		}
     		// Push the termValue into the operands Stack
     		operands.push(termValue);
-    		System.out.println("pushed term: " + term + "=" + termValue);
+    		//System.out.println("pushed term: " + term + "=" + termValue);
     		
     		/* Get the operator */
     		// If the operator exists i.e. its index doesn't equal originalExpr's length()
@@ -425,7 +425,7 @@ public class Expression {
     			// Go on to the index of the content after the operator i.e. the next term or 1 + the 
     			// 		operator's index
     			currentIndex = nextOperatorIndex + 1;
-    			System.out.println("pushed operator: " + operator);
+    			//System.out.println("pushed operator: " + operator);
     		}
     		// Else, (reached the end of the expression)
     		else {
@@ -501,7 +501,7 @@ public class Expression {
 	    			expr = originalExpr.substring(openingParenIndexInOriginalExpr+1, closingParenIndexInOriginalExpr);
 	    			// Trim expr of its whitespaces/tabs
 	    			expr = expr.trim();
-	    			System.out.println("encountered subexpression: " + expr + ", recursing");
+	    			//System.out.println("encountered subexpression: " + expr + ", recursing");
 	    			// Find the opening and closing brackets of the new expr using isLegallyMatched()
 	    			isLegallyMatched();
 	    			// evaluate() the subexpression, and Store in nextTermValue
@@ -517,12 +517,12 @@ public class Expression {
 					// Extract the subscript (an expression) of the array by making the content in between the brackets 
 					// 		the new expr
 	    			expr = originalExpr.substring(openingSquareBracketIndexInOriginalExpr+1, closingSquareBracketIndexInOriginalExpr);
-	    			System.out.println("encountered subexpression: " + expr + ", recursing");
+	    			//System.out.println("encountered subexpression: " + expr + ", recursing");
 	    			// Find the opening and closing brackets of the new expr using isLegallyMatched()
 	    			isLegallyMatched();
 	    			// evaluate() the content, and Store the returned value in arrayIndex.
 	    			int arrayIndex = (int) evaluate();
-	    			System.out.println("subscript value: " + arrayIndex);
+	    			//System.out.println("subscript value: " + arrayIndex);
 					// Find the array name in arrays and use the arrayIndex to find the nextTermValue in that array
 	    			ArraySymbol array = new ArraySymbol(arrayName);
 	    			int arrayi = arrays.indexOf(array);
@@ -542,7 +542,7 @@ public class Expression {
 	    			nextTermValue = getTermValue(nextTerm); 
 	    		}
 	    		
-	    		System.out.println("got nextTerm: " + nextTerm + "=" + nextTermValue);
+	    		//System.out.println("got nextTerm: " + nextTerm + "=" + nextTermValue);
 				// Pop the top (previous) term in the operands Stack
 	    		float previousTermValue = operands.pop();
 				// Pop the top operator (* or /)
@@ -557,8 +557,8 @@ public class Expression {
 	    		}
 				// Push the result into the operands Stack 
 	    		operands.push(result);
-    			System.out.println("operation: " + previousTermValue + " " + operator + " " + nextTermValue);
-    			System.out.println("result: " + result + ", pushed result");
+    			//System.out.println("operation: " + previousTermValue + " " + operator + " " + nextTermValue);
+    			//System.out.println("result: " + result + ", pushed result");
     			
 		    	/* Get the next operator */
 	    		// If the operator exists i.e. its index doesn't equal originalExpr's length()
@@ -569,7 +569,7 @@ public class Expression {
 	    			// Go on to the index of the content after the operator i.e. the next term or 1 + the 
 	    			// 		operator's index
 	    			currentIndex = nextOperatorIndex + 1;
-	    			System.out.println("pushed operator: " + operator);
+	    			//System.out.println("pushed operator: " + operator);
 	    		}
 	    		// Else, (reached the end of the expression)
 	    		else {
@@ -584,7 +584,7 @@ public class Expression {
     	// Only + and - signs left in the operator Stack so start operating on the operands
 		// While the operator Stack is not empty
 		while (!operators.isEmpty()) {
-			System.out.println("adding/subtracting terms");
+			//System.out.println("adding/subtracting terms");
 			//System.out.println("remaining operators: " + operators.size());
 			// Pop the first term in the operand Stack
 			float secondTerm = operands.pop(); // called "second" because it appears later in the expression
@@ -609,29 +609,29 @@ public class Expression {
 				operators.push('+');
 			}
 			// Perform the operation
-			System.out.println("secondTerm: " + secondTerm);
-			System.out.println("firstTerm: " + firstTerm);
-			System.out.println("operation: " + firstTerm + " " + operator + " " + secondTerm);
+			//System.out.println("secondTerm: " + secondTerm);
+			//System.out.println("firstTerm: " + firstTerm);
+			//System.out.println("operation: " + firstTerm + " " + operator + " " + secondTerm);
 			
 			// Accounted for the negative signs, so only plus signs remain
 			float result = firstTerm + secondTerm;
 			
 			// Push the result in the operand Stack
 			operands.push(result);
-			System.out.println("pushed result: " + result);
+			//System.out.println("pushed result: " + result);
 			//System.out.println("remaining operators: " + operators.size());
 		}
 		
 		// Pop the value in the operand Stack (only 1 left) and return it
-		System.out.println("evaluated (sub)expression: " + originalExpr + ", returning result: " + operands.peek());  
+		//System.out.println("evaluated (sub)expression: " + originalExpr + ", returning result: " + operands.peek());  
 		
 		// Set the current opening- and closing-BracketIndex ArrayLists equal to the original opening- and 
     	// 		closing-BracketIndex ArrayLists
     	openingBracketIndex = originalOpeningBracketIndex;
     	closingBracketIndex = originalClosingBracketIndex;
     	// Print the opening- and closing-BrackedIndexes, for verification purposes
-    	System.out.println("openingBracketIndex: " + openingBracketIndex.toString());
-    	System.out.println("closingBracketIndex: " + closingBracketIndex.toString());
+    	//System.out.println("openingBracketIndex: " + openingBracketIndex.toString());
+    	//System.out.println("closingBracketIndex: " + closingBracketIndex.toString());
     	
     	return operands.pop();
     }

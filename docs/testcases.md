@@ -70,7 +70,7 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 |17|`a/(b/c)*d`|`0.67`|
 |18|`(a*b)+(c/d)`|`2.75`|
 |19|`(a+b)/(c-d)`|`-3`|
-|20|`(a+b)`|`3|
+|20|`(a+b)`|`3`|
 |21|`(a)`|`1`|
 |22|`(a+b)*(c-d)-(e/f)`|`-3.83`|
 |23|`A[4]`|`5`|
@@ -93,7 +93,7 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 |40|`A[-1]`|`NaN`|
 |41|`A[10]`|`NaN`|
 |42|`a/0`|`Infinity`|
-|43|`0/1`|'0`|
+|43|`0/1`|`0`|
 |44|`a+123+567`|`691`|
 |45|`a+\tb+_c`|`6`|
 |46|`A[j]`|`NaN`|
@@ -101,20 +101,20 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 
 #### Guide through above Test Cases
 
-`#6 through #11`  &rarr; all combinations of operations work on integer/scalar terms</br>
+`#6 through #11`  &rarr; all combinations of operations work on integer/scalar terms
+
 `#21`             &rarr; subexpression with 1 integer/scalar</br>
 `#20`             &rarr; subexpression with expression</br>
 `#12 through #22` &rarr; identify and evaluate subexpressions in the front, middle, and end of expression with all operators
 
 `#23`             &rarr; identify and evaluate an array</br>
 `#24`             &rarr; identify and evaluate an array with a longer name</br>
-`#23 through #31` &rarr; identify and evaluate arrays in the front, middle, and end of expression with all operators</br>
-
+`#23 through #31` &rarr; identify and evaluate arrays in the front, middle, and end of expression with all operators
 
 `#32 through #35` &rarr; identify and evaluate expressions with arrays/subexpressions nested inside array/subexpression</br>
 `#33 and #35`     &rarr; can extract content in between opening and closing square brackets</br>
 
-`#36 through #38` &rarr; everything together</br>
+`#36 through #38` &rarr; everything together
 
 `#40 through #47` &rarr; edge cases</br>
 `#40`             &rarr; array index < 0</br>
