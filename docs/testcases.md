@@ -19,8 +19,8 @@ was tested using the printScalars() and printArrays() methods provided by the co
 | 6  |`a__+__b`        |`vara[i]__+__varb[p]`   |
 | 7  |`a_+b`           |`vara[i]_+varb[p]`      |
 | 8  |`a+_b`           |`vara[i]+_varb[p]`      |
-| 9  |               |`var[\_i\_]`              |
-| 10 |               |`var[\__i\__]`            |
+| 9  |               |`var[_ i_]`              |
+| 10 |               |`var[__ i__]`            |
 | 11 |               |`var[i_]`               |
 | 12 |               |`var[_i]`               |
 
