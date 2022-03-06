@@ -124,7 +124,7 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 `#43`             &rarr; divide 0 by any number</br>
 `#44`             &rarr; try expression with multidigit integers</br>
 `#45`             &rarr; try expression with spaces & tabs (the "\t" is replaced by an actual tab in the expression)</br>
-`#46 and 47`      &rarr; try expression with scalar of negative value
+`#46 and 47`      &rarr; try expression with scalar of negative value</br>
 `#48`		      &rarr; try expression with multiple of the same variable
 
 The `NaN`'s are used to circumvent an error message and make the usage of the app more fluid.
