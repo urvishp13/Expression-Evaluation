@@ -29,7 +29,8 @@ are still one/two, respectively.
 
 ## evaluate()
 
-The database (.txt file used) with the variables values is [etest3.txt](https://github.com/urvishp13/Expression-Evaluation/blob/main/data/etest3.txt).
+The database (.txt file) used was [etest3.txt](https://github.com/urvishp13/Expression-Evaluation/blob/main/data/etest3.txt). Its contents
+are below.
 
 ```
 a 1
