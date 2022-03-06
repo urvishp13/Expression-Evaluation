@@ -29,32 +29,24 @@ are still one/two, respectively.
 
 ## evaluate()
 
-The database (.txt file used) with the variables/arrays values is `etest3.txt`.
+The database (.txt file used) with the variables values is [etest3.txt](https://github.com/urvishp13/Expression-Evaluation/blob/main/data/etest3.txt).
 
-#### Guide
-
-`#6 through #11`  &rarr; all combinations of operations work on integer/scalar terms</br>
-`#21`             &rarr; subexpression with 1 integer/scalar</br>
-`#20`             &rarr; subexpression with expression</br>
-`#12 through #22` &rarr; identify subexpressions in the front, middle, and end of expression with all operators
-
-`#23`             &rarr; identify an array</br>
-`#24`             &rarr; identify an array with a longer name</br>
-`#23 through #31` &rarr; identify arrays in the front, middle, and end of expression with all operators</br>
-
-
-`#32 through #35` &rarr; identify expressions with arrays/subexpressions nested inside array/subexpression</br>
-`#33 and #35`     &rarr; can extract content in between opening and closing square brackets</br>
-
-`#36 through #38` &rarr; everything together</br>
-
-`#42 through #47` &rarr; edge cases</br>
-`#42`             &rarr; array subscript < 0</br>
-`#43`             &rarr; divide by 0</br>
-`#44`             &rarr; divide 0 by any number</br>
-`#45`             &rarr; try expression with multidigit integers</br>
-`#46`             &rarr; try expression with spaces & tabs</br>
-`#47`             &rarr; try expression with scalar of negative value
+```
+a 1
+b 2
+c 3
+d 4
+e 5
+f 6
+g 7
+h 8
+i 0
+j -1
+k -2
+arraya 6 (0,1) (1,2) (2,3) (3,4) (4,5) (5,6)
+A 6 (0,1) (1,2) (2,3) (3,4) (4,5) (5,6)
+B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
+```
 
 |    | Expression    | Value |
 |:--:|:-------------:|:-----:|
@@ -95,53 +87,39 @@ The database (.txt file used) with the variables/arrays values is `etest3.txt`.
 |35|`B[arraya[A[1]]]`|`10`|
 |36|`a+B[4]*(d-e)`|`-10`|
 |37|`(b/c-arraya[1]*A[5]`|`-8`|
-|38|`A[a+(b*c)/d-e]`|`NaN`|
+|38|`A[a+(b*c)/d-g]`|``|
 |39|`A[a+b]+B[c+d]`|`18`|
-|40|`A[j]`|`NaN`|
-|41|`A[10]`|`NaN (index too large)`|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
-|1|`a+b`|3|
+|40|`A[-1]`|`error!`|
+|41|`A[10]`|`error!`|
+|42|`a/0`|3|
+|43|`0/1`|3|
+|44|`a+123+567`|3|
+|45|`a+\tb+_c`|3|
+|46|`A[j]`|`error!`|
+|47|`j-4`|3|
+
+#### Guide through above Test Cases
+
+`#6 through #11`  &rarr; all combinations of operations work on integer/scalar terms</br>
+`#21`             &rarr; subexpression with 1 integer/scalar</br>
+`#20`             &rarr; subexpression with expression</br>
+`#12 through #22` &rarr; identify and evaluate subexpressions in the front, middle, and end of expression with all operators
+
+`#23`             &rarr; identify and evaluate an array</br>
+`#24`             &rarr; identify and evaluate an array with a longer name</br>
+`#23 through #31` &rarr; identify and evaluate arrays in the front, middle, and end of expression with all operators</br>
+
+
+`#32 through #35` &rarr; identify and evaluate expressions with arrays/subexpressions nested inside array/subexpression</br>
+`#33 and #35`     &rarr; can extract content in between opening and closing square brackets</br>
+
+`#36 through #38` &rarr; everything together</br>
+
+`#40 through #47` &rarr; edge cases</br>
+`#40`             &rarr; array index < 0</br>
+`#41`             &rarr; array index >= array size</br>
+`#42`             &rarr; divide by 0</br>
+`#43`             &rarr; divide 0 by any number</br>
+`#44`             &rarr; try expression with multidigit integers</br>
+`#45`             &rarr; try expression with spaces & tabs (the "\t" is replaced by an actual tab in the expression)</br>
+`#46 and 47`      &rarr; try expression with scalar of negative value
