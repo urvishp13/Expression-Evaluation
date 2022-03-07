@@ -11,7 +11,7 @@ expression were extracted.
 
 |    | Expression    | Expression           |
 |:--:|:-------------:|:--------------------:|
-|    | **Variables Only** | **Variables and Arrays** |
+|    | **Scalars Only** | **Scalars and Arrays** |
 | 1  |`a`              |`var[i]`                |
 | 2  |`a+b`            |`vara[i]+varb[p]`       |  
 | 3  |`a_+_b`          |`vara[i]_+_varb[p]`     |
