@@ -5,8 +5,9 @@
 Note: The underscores in the test cases are spaces: "_" is one space and "__" is two spaces. Spaces were put in the test cases to see if 
 non-letter/non-numeric characters are properly skipped when parsing the expression.
 
-There is no return value for this expression. Instead, it is used to extract the variables/arrays from the expresssion. Its correctness
-was tested using the printScalars() and printArrays() methods provided by the coursework.
+There is no return value for this method. Instead, it is used to extract the scalars/arrays from the expresssion. Its correctness
+was tested using the printScalars() and printArrays() methods provided by the coursework to see if the variables written in the
+expression were extracted.
 
 |    | Expression    | Expression           |
 |:--:|:-------------:|:--------------------:|
@@ -112,8 +113,7 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 `#24`             &rarr; identify and evaluate an array with a longer name</br>
 `#23 through #31` &rarr; identify and evaluate arrays in the front, middle, and end of expression with all operators
 
-`#32 through #35` &rarr; identify and evaluate expressions with arrays/subexpressions nested inside array/subexpression</br>
-`#33 and #35`     &rarr; can extract content in between opening and closing square brackets</br>
+`#32 through #35` &rarr; identify and evaluate expressions with arrays/subexpressions nested inside array/subexpression
 
 `#36 through #38` &rarr; everything together
 
