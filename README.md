@@ -6,9 +6,8 @@ This project is solely written in Java. Please run it using Java 8.
 
 This project was an assignment given to Rutgers CS112 Data Structures students in the Fall of 2014. 
 It was redone in September 2021 with no recollection
-of how the project was initially completed. The focus of this project is to evaluate algebraic, numeric, or both combined 
-expressions with variables (i.e. scalars and arrays--scalars are "simple, non‐array variables") with 
-integer values and/or integer numbers. The expressions were to be solved using Stacks and Recursion.
+of how the project was initially completed. The focus of this project is to evaluate algebraic/numeric/algebraic-numeric 
+expressions that have variables and/or constants of integer value. The expressions were to be solved using Stacks and Recursion.
 
 ## Code & Test Cases
 
