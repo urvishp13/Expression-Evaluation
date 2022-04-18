@@ -3,9 +3,9 @@
 ## buildSymbols()
 
 Note: The underscores in the test cases are spaces: "_" is one space and "__" is two spaces. Spaces were put in the test cases to see if 
-non-letter/non-numeric characters are properly skipped when parsing the expression.
+non-letter/non-numeric/non-operator characters are properly skipped when scanning the contents of the expression.
 
-There is no return value for this method. Instead, it is used to extract the scalars/arrays from the expresssion. Its correctness
+There is no return value for this method. Instead, it is used to extract the scalars/arrays from the expression. Its correctness
 was tested using the printScalars() and printArrays() methods provided by the coursework to see if the variables written in the
 expression were extracted.
 
@@ -30,8 +30,8 @@ are still one/two, respectively.
 
 ## evaluate()
 
-The database (.txt file) used was [etest3.txt](https://github.com/urvishp13/Expression-Evaluation/blob/main/data/etest3.txt). Its contents
-are below.
+The variable-value file used to test was [etest3.txt](https://github.com/urvishp13/Expression-Evaluation/blob/main/data/etest3.txt). 
+Its contents are below.
 
 ```
 a 1
@@ -125,4 +125,4 @@ B 8 (0,7) (1,8) (2,9) (3,10) (4,11) (5,12) (6,13) (7,14)
 `#44`             &rarr; try expression with multidigit integers</br>
 `#45`             &rarr; try expression with spaces & tabs (the "\t" is replaced by an actual tab in the expression)</br>
 `#46 and 47`      &rarr; try expression with scalar of negative value</br>
-`#48`		      &rarr; try expression with multiple of the same variable
+`#48`		      &rarr; try expression with the same variable used multiple times
