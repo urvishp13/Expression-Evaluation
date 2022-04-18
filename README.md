@@ -15,8 +15,8 @@ The code written can be found in the [src](https://github.com/urvishp13/Expressi
 `@author Urvish Patel` tag before Classes to see the code I have written.
 The code was tested using self-generated test cases that can be found in [this](https://github.com/urvishp13/Expression-Evaluation/blob/main/docs/testcases.md) 
 file. Expressions can be inputted when prompted in the (eg. terminal) after running the program. 
-Only use variables that are in your variable-value text file--this text file is basically like a database; 
-if variables other than the ones listed are used, you will
+Only use variables that are in your variable-value text file--this file is basically like a database; 
+if variables other than the ones listed in this file are used, you will
 get an evaluation but it will be incorrect (just a note if you're trying to test an edge case). If you want to create your own text file, 
 simply create a text file and follow the the instructions on 
 how to format the content under the "Running the evaluator" section in [problem_specs](https://github.com/urvishp13/Expression-Evaluation/blob/main/docs/problem_specs.pdf) 
@@ -44,6 +44,6 @@ don't have a scalar named "a" and an array named "a"). Doing so will throw the l
 
 `KEY POINT #3`: The minus sign in the expression is constricted to subtraction only; it cannot be used to change the 
 sign of a variable or integer i.e. it cannot change the value from positive (or negative) to negative (or positive).
-Example: -1 and -a is invalid but 2-1 and 1-a is valid.
+Example: -1 and -a are invalid but 2-1 and 1-a are valid.
 
 `KEY POINT #4`: For arrays, there cannot be a space between the array name and its opening square bracket.
