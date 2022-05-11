@@ -4,9 +4,7 @@ This project is solely written in Java. Please run it using Java 8.
 
 ## Overview
 
-This project was an assignment given to Rutgers CS112 Data Structures students in the Fall of 2014. 
-It was redone in September 2021 with no recollection
-of how the project was initially completed. The focus of this project is to evaluate algebraic/numeric/algebraic-numeric 
+The focus of this project is to evaluate algebraic/numeric/algebraic-numeric 
 expressions that have variables and/or constants of integer value. The expressions were to be solved using Stacks and Recursion.
 
 ## Code & Test Cases
@@ -47,3 +45,9 @@ sign of a variable or integer i.e. it cannot change the value from positive (or 
 Example: -1 and -a are invalid but 2-1 and 1-a are valid.
 
 `KEY POINT #4`: For arrays, there cannot be a space between the array name and its opening square bracket.
+
+<hr>
+
+This project was an assignment given to Rutgers CS112 Data Structures students in the Fall of 2014. 
+It was redone in September 2021 with no recollection
+of how the project was initially completed. 
