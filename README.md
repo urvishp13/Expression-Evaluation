@@ -45,9 +45,3 @@ sign of a variable or integer i.e. it cannot change the value from positive (or 
 Example: -1 and -a are invalid but 2-1 and 1-a are valid.
 
 `KEY POINT #4`: For arrays, there cannot be a space between the array name and its opening square bracket.
-
-<hr>
-
-This project was an assignment given to Rutgers CS112 Data Structures students in the Fall of 2014. 
-It was redone in September 2021 with no recollection
-of how the project was initially completed. 
